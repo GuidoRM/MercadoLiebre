@@ -1,0 +1,55 @@
+html{
+    background-color: var(--GrisClaro);
+}
+
+main{
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.login{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.login input[type="text"],input[type="password"]{
+    height: 2rem;
+    border: none;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+}
+
+.login section{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.login button{
+    height: 2rem;
+    color: white;
+    background-color: var(--Celeste);
+    border-radius: 0.4rem;
+    border: none;
+}
+
+.login button:hover{
+    background-color: #0022AA;
+}
+
+
+
+@media (max-width:600px){
+    main{
+        width: 90%;
+    }
+}
+
+@media (min-width:600px){
+    main{
+        width:50%;
+    }
+}

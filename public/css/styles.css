@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/**Variables colores**/
+:root { 
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --GrisOscuro: #666;
+    --GrisClaro: #ebebeb;
+    --Verde: #39b54a; 
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/**-----------HEADER--------------**/
+header {
+    background-color: var(--Amarillo);
+}
+
+.header-principal{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem 0 0 0;
+}
+
+.logo-ml {
+    width: 20%;
+}
+
+.metodosPagos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botones {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.botones-lista{
+    display: flex;
+}
+.botones-lista a{
+    margin: 0 0.5rem 1.5rem 0.5rem;
+}
+
+.botones ul,a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+}
+
+.menu span {
+    margin: 1rem;
+    padding: 0.5rem;
+    color:white;
+    background-color: var(--Celeste);
+    border-radius: 0.4rem;
+}
+
+.banner{
+    width: 100%;
+}
+
+.ultimaVisita, .ofertas {
+    display: flex;
+    column-gap: 1rem;
+}
+
+.barraBusqueda{
+    display: flex;
+}
+
+.barraBusqueda button{
+    height: 2rem;
+    padding: 0 0.5rem;
+    text-align: center;
+    position: relative;
+    right: 10px;
+    color: #6f7373;
+    border: #726e6b 1px solid;
+    border-radius: 0 0.2rem 0.2rem 0;
+    border-left: none;
+    padding-right: 0.2rem;
+    background-color: white;
+}
+.barraBusqueda input{
+    height: 2rem;
+    padding: 0.5rem;
+}
+
+.barraBusqueda input:focus{
+    outline: none;
+}
+
+
+
+/**------------------------------**/
+
+@media (max-width:600px){
+    .botones {
+        display: none;
+    }
+    .banner {
+        display: none;
+    }
+
+    .header-principal{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .metodosPagos{
+        margin-top: 1rem;
+    }
+
+    .logo-ml {
+        width: 40%;
+    }
+
+    footer{
+        flex-wrap: wrap;
+    }
+
+    .barraBusqueda input{
+        width: 100%;
+    }
+    
+}
+
+@media (min-width:600px){
+    .menu {
+        display: none;
+    }
+
+    .producto{
+        width: 15rem;
+    }
+
+    .barraBusqueda input{
+        width: 18rem;
+    }
+    
+}
+
+/**------------------------------**/
+
+/**-------------FOOTER-------------**/
+footer{
+    padding: 0rem 1rem;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.copyright {
+    text-align: left;
+    padding: 1rem 1rem;
+    color: var(--GrisOscuro);
+    background-color: white;
+}
+
+footer section {
+    text-align: center;
+    flex-direction: column;
+    margin: 2rem 0;
+    
+}
+
+footer section span{
+    color: var(--Celeste);
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+footer section h4{
+    color: var(--GrisOscuro);
+    font-size: 24px;
+}
+
+footer section p{
+    color: var(--GrisOscuro);
+    font-size: 12px;
+}
+
+footer .copyright {
+    text-align: left;
+}
+
+footer span:hover{
+    color: #03264C;
+}
